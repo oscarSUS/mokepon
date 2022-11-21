@@ -1,1 +1,79 @@
-# mokepon
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="js/mokepon.js"></script>
+    <link rel="stylesheet" href="css/style.css" >
+    <title>MOKEPON</title>
+</head>
+<body>
+
+        <section id="seleccionar-mascota" >
+            <h1 class="titulo">MOKEPON</h1>
+            <div class="fondoSubtitulo">   
+                <h2 class="subtitulo">Elige a tu mokepon:</h2>
+                <div class="targetas">
+                
+                    <input type="radio" name="mokepon" id="Charmander" />
+                    <label class="targeta-mokepon" for="Charmander">
+                        <p><strong>Charmander</strong></p>
+                        <img src="./css/Charmander.gif" alt="">
+                    </label>
+                    
+                    <input type="radio" name="mokepon" id="Piplup" />
+                    <label class="targeta-mokepon" for="Piplup">
+                        <p><strong>Piplup</strong></p>
+                        <img src="./css/Piplup.gif" alt="">
+                    </label>
+                  
+                    <input type="radio" name="mokepon" id="Gengar" />
+                    <label class="targeta-mokepon" for="Gengar">
+                        <p><strong>Gengar</strong></p>
+                        <img src="./css/Gengar.gif" alt="">
+                    </label>
+                
+                    <button id="Select-mokepon">Seleccionar</button>
+                   
+                </div>
+            </div>     
+        </section>
+
+        <section id = "seleccion-ataque">
+
+                <div class ="contenido-ataques">
+                    <h2>Elige tu ataque:</h2>
+                    <div class="boton-ataque">
+                        <button id="boton-fuego">Fuego 🔥</button>
+                        <button id="boton-agua">Agua 💧</button>
+                        <button id="boton-tierra">Tierra 🌱</button>
+                    </div>
+                </div>
+
+                    <div id = "mensajes">
+                        <p id="resultado">MARCADOR</p>
+                        <section id = "reiniciar">
+                            <button id="boton-reiniciar">Volver a Jugar</button>
+                        </section> 
+                    </div>
+
+                <div class = "ataques">
+                    <div class="ataques-jugador">
+                        <p>JUGADOR</p>
+                        <p id="vidas-jugador">3 ❤️</p>
+                        <p id="mokepon-jugador"></p>
+                        <div id="ataques-de-jugador"><p>atacó con</p></div>
+                    </div>
+
+                    <div class="ataques-jugador">
+                        <p>ENEMIGO</p>
+                        <p id="vidas-enemigo">3 💚</p>
+                        <p id="mokepon-enemigo"></p>
+                        <div id="ataques-de-enemigo"><p>atacó con</p></div>    
+                    </div>
+                    
+                </div>
+
+                
+            
+        </section>
+</body>
+</html>
